@@ -77,3 +77,15 @@ if(i>b){
 git config --global user.name "Your Name"
 配置当前账号的用户名`
 
+### 练习
+1. 创建一个任意名称的文件，并通过git相关命令将此文件上传至github.com
+2. 下面那几行行代码是错误的：
+```javascript
+	var ABC = 10;
+	var Bac = 10;
+	var string = 'Test';
+	var $abc = 10;
+	var _abc = 10;
+	var abc56 = 56;
+	var 56abc = 50;
+```
