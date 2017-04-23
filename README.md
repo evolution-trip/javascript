@@ -37,11 +37,13 @@ JavaScript中变量有很多种类型，但是现在，我们只关注数字和�
 
 ### Javascript 条件语句
 
-`if(i>b){
+```javascript
+if(i>b){
     console.log("i is big");
 }else{
     console.log("b is big");
-}`
+}
+```
 
 ### Git 基本命令
 
