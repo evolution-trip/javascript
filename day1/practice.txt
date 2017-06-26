@@ -1,0 +1,2 @@
+第三个var string=‘test’它应该是双引号
+最后一行 Var=56abc不能以字母为开头 
