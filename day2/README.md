@@ -1,91 +1,47 @@
 # javascript
 
-## Day 1
-### Javascript 输出
+## Day 2 数组和for
 
-`console.log("HelloWorld!");`
+### 数组
+####什么是数组？
 
-### Javascript 变量
-**变量是存储信息的容器。**
-就好像一栋大楼里面的房子。变量名相当于门牌号，值相当于房子里装的东西。
+> 通俗的说数据就是一堆类似的东西。
+> 不通俗的说，数组就是相同数据类型的元素按一定顺序排列的集合。
+> 例如： 张三 李四 王五 赵六 孙七 周八 吴九 郑十
+> 或者：Sunday Monday Tuesday Wednesday Thursday Friday Saturday
+> 或者：1 2 4 8 16 32 64 128
 
-在javascript里面，声明一个变量使用关键字`var`。例如：
+#### 数组有些什么特点？
+1. 类型相同（javascript中允许不相同）
+2. 长度
+3. 有顺序
 
-`var i=10;`
-
-`var s="Hello World!";`
-
-`var pi = 3.1415926;`
-
-声明一个变量时需要**注意**：
-
-1. 变量必须以字母开头
-2. 变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）
-3. 变量名称对大小写敏感（y 和 Y 是不同的变量）
-
-
-### Javascript 数据类型
-
-1. 整形 `var i = 100;`
-2. 浮点型 `var f = 3.14;`
-3. 文本 `var s = "Hello Javascript!";`
-4. 布尔 `true` `false`
-
-JavaScript中变量有很多种类型，但是现在，我们只关注数字和字符串。
-当您向变量分配文本值时，应该用双引号或单引号包围这个值。
-当您向变量赋的值是数值时，不要使用引号。如果您用引号包围数值，该值会被作为文本来处理。
-
-### Javascript 条件语句
-
+#### 在Javascript中如何声明数组
+在Javascript中可以使用`Array`和 `new`关键字创建一个数组，也可以使用`[]`方括号，创建一个数组。
 ```javascript
-if(i>b){
-    console.log("i is big");
-}else{
-    console.log("b is big");
-}
+	var a1=new Array(); //无参构造函数，创建一空数组。
+	var a2=new Array(5);// 一个数字参数构造函数，指定数组长度,创建指定长度的数组
+	var a3 = [];//使用方括号，创建空数组
+	var a4=[10]; //使用中括号，并传入初始化数据
+```
+#### 使用数组
+##### 长度
+```javascript
+	var a1 = new Array();
+	console.log(a1);
+	console.log(a1.length);
+	
+	var a2 = new Array(5);
+	console.log(a2);
+	console.log(a2.length);
+	
+	var a3 = [];
+	console.log(a3);
+	console.log(a3.length);
+	
+	var a4 = [10];
+	console.log(a4.length);
+	console.log(a4);
+	
 ```
 
-### Git 基本命令
-
-#### git clone
-克隆现有仓库。命令格式为：`git clone [url] `。例如：
-
-`git clone https://github.com/evolution-trip/javascript.git`
-
-#### git add
-如果当前目录下有几个文件想要纳入版本控制，需要先用 git add 命令告诉 Git 开始对这些文件进行跟踪:
-
-`git add lsc.html`
-
-#### git commit
-将本次更新提交到本地仓库,用 -m 参数后跟提交说明的方式：
-`git commit -m "sunday"`
-
-
-
-#### git push
-推送数据到远程仓库,将本地仓库中的数据推送到远程仓库。实现这个任务的命令很简单：
- `git push [remote-name] [branch-name]`
-#### git pull
-将远程仓库的数据抓取合并到本地。
-`git pull`
-
-#### git config
-配置git
-
-`git config --global user.email "ale0512@126.com" // 配置当前git用户的email
-git config --global user.name "Your Name"
-配置当前账号的用户名`
-
-### 练习
-1. 创建一个任意名称的文件，并通过git相关命令将此文件上传至github.com
-2. 下面那几行行代码是错误的：
-```javascript
-	var ABC = 10;
-	var Bac = 10;
-	var string = 'Test';
-	var $abc = 10;
-	var _abc = 10;
-	var abc56 = 56;
-	var 56abc = 50;
-```
