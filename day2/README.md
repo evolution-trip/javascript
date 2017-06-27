@@ -27,21 +27,79 @@
 #### 使用数组
 ##### 长度
 ```javascript
+
 	var a1 = new Array();
 	console.log(a1);
 	console.log(a1.length);
-	
+
 	var a2 = new Array(5);
 	console.log(a2);
 	console.log(a2.length);
-	
+
 	var a3 = [];
 	console.log(a3);
 	console.log(a3.length);
-	
+
 	var a4 = [10];
 	console.log(a4.length);
 	console.log(a4);
-	
-```
 
+```
+##### push和pop
+`push`是向Array的末位添加若干元素，`pop`则是把末位最后一个元素删除掉。
+
+```javascript
+var arr = [1,2];
+console.log(arr.length);
+console.log(arr);
+arr.push(3);//向arr的末位增加一个元素 3
+console.log(arr.length);
+console.log(arr);
+arr.pop();//删除arr末位元素
+console.log(arr);
+console.log(arr.length);
+```
+其实数组还有很多方法，可以自己学习。
+
+### for循环
+
+#### for循环是干嘛的？
+`for` 是javascript的一个关键字，如果你想一遍又一遍的执行相同的代码，并且每次执行的结果不同，那么使用`for`就很方便。
+例如：从打印1到10。
+#### 例子
+```javascript
+//普通写法：
+	console.log(1);
+	console.log(2);
+	console.log(3);
+	console.log(4);
+	console.log(5);
+	console.log(6);
+	console.log(7);
+	console.log(8);
+	console.log(9);
+	console.log(10);
+	//OK，完成了，很简单对不对。代码简单，逻辑清楚。
+	
+	
+	//那如果打印1到100，是不是要复制粘贴十次，再挨个该数字。其实也行，累就累点，也是能实现。
+	//那如果打印1到1000000呢？是不是感觉有些吃不消了。
+	//这个时候 for作用就体现出来了。
+	
+	//for的写法：
+	for(var i = 1;i<=100;i++){//想打印多少次，就把对应的数字改为多少。
+      console.log(i);
+	}
+```
+#### for循环的语法
+```javascript
+	for(语句 1; 语句 2; 语句 3){
+       被执行的代码块
+	}
+	//语句 1 （代码块）开始前执行 starts.
+	//语句 2 定义运行循环（代码块）的条件
+	//语句 3 在循环（代码块）已被执行之后执行
+	for(var i=0;i<10;i++){
+      console.log(i)
+	}
+```
