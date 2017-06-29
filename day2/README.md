@@ -138,7 +138,11 @@ console.log(arr.length);
 #### 完成练习后，请将练习文件通过git命令上传到github.com中。
 
 ```shell
+	// 更新本地代码库
 	git pull origin master 
+	git add 你的文件
+	//提交本地代码
 	git commit -m "home work" .
+	//提交代码到远程代码库
 	git push origin master
 ```
