@@ -80,12 +80,12 @@ console.log(arr.length);
 	console.log(9);
 	console.log(10);
 	//OK，完成了，很简单对不对。代码简单，逻辑清楚。
-	
-	
+
+
 	//那如果打印1到100，是不是要复制粘贴十次，再挨个该数字。其实也行，累就累点，也是能实现。
 	//那如果打印1到1000000呢？是不是感觉有些吃不消了。
 	//这个时候 for作用就体现出来了。
-	
+
 	//for的写法：
 	for(var i = 1;i<=100;i++){//想打印多少次，就把对应的数字改为多少。
       console.log(i);
@@ -103,3 +103,18 @@ console.log(arr.length);
       console.log(i)
 	}
 ```
+
+#### 当for循环遇到数组
+在有些情况下，我们需要将一个数组里所有的元素都取出来，这时就可以使用for语句。
+ ```javascript
+    var cars = new Array();
+    cars[0] = "BMW";
+    cars[1] = "Benz";
+    cars[2] = "Ford";
+    cars[3] = "Volkswagen";
+
+    for(var i=0;i<cars.length;i++){
+        console.log(cars[i]);
+    }
+
+ ```
