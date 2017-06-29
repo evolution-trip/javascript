@@ -134,3 +134,11 @@ console.log(arr.length);
 	//请找出items数组中最小的是谁。
 	//提示：使用for语句和if语句。
 ```
+
+#### 完成练习后，请将练习文件通过git命令上传到github.com中。
+
+```shell
+	git pull origin master 
+	git commit -m "home work" 
+	git push origin master
+```
