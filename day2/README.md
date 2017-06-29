@@ -139,6 +139,6 @@ console.log(arr.length);
 
 ```shell
 	git pull origin master 
-	git commit -m "home work" 
+	git commit -m "home work" .
 	git push origin master
 ```
